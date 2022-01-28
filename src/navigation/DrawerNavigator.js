@@ -83,12 +83,12 @@ const CustomDrawerContent = (props) => {
     }
 
     return (
-        <DrawerContentScrollView {...props} style={{ backgroundColor: '#1e1e1e'}}>
+        <DrawerContentScrollView {...props} style={{ backgroundColor: '#1e1e1e' }}>
             <DrawerItem label='Home' onPress={() => {
                 props.navigation.navigate('HomeStack')
                 fetchJoke();
             }} />
-            <DrawerItem label='TELL ME A JOKE' onPress={() => {
+            <DrawerItem label='Show me a Joke' onPress={() => {
                 sendPushNotification(expoPushToken);
             }} />
         </DrawerContentScrollView>
